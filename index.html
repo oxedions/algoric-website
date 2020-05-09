@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top fontawesome-i2svg-active fontawesome-i2svg-complete"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Algoric</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+   font-family: Montserrat;
+   src: url(Montserrat-Light.ttf);
+}
+</style>
+
+<link href="bulma-docs.min.css" rel="stylesheet">
+<script defer src="all.js"></script>
+
+<!-- from https://codepen.io/hunzaboy/pen/yoPKQW -->
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  // Check if there are any nav burgers
+  if ($navbarBurgers.length > 0) {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+  });
+	</script>
+  <style>
+  .navbar-item.is-mega {
+    position: static;
+
+    .is-mega-menu-title {
+      margin-bottom: 0;
+      padding: .375rem 1rem;
+    }
+  }
+  </style>
+
+</head>
+  <body class="layout-default">
+
+    <nav class="navbar is-spaced is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+
+          <a class="navbar-item" href="https://algoric.org/">
+            <img src="algoric_white_icon.svg" alt="Algoric">
+          </a>
+          <div class="navbar-burger burger" data-target="navMenubd-example">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <a class="navbar-item " href="/">Home</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link">
+            The project
+            </div>
+            <div class="navbar-dropdown ">
+              <a class="navbar-item " href="/the_project/open.html">
+                Open to all
+              </a>
+              <a class="navbar-item " href="/the_project/green.html">
+                Recycling and green
+              </a>
+              <a class="navbar-item " href="/the_project/gateway.html">
+                Gateway to HPC
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link">
+            Resources
+            </div>
+            <div class="navbar-dropdown ">
+              <a class="navbar-item " href="/resources/register.html">
+                Register
+              </a>
+              <a class="navbar-item " href="/resources/documentation.html">
+                Documentation
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item " href="/context.html">Context</a>
+          <a class="navbar-item " href="/about.html">About & Contact</a>
+          <div class="navbar-item has-dropdown is-hoverable is-mega">
+            <div class="navbar-link">
+              External
+            </div>
+            <div id="blogDropdown" class="navbar-dropdown " data-style="width: 18rem;">
+              <div class="container is-fluid">
+                <div class="columns">
+                  <div class="column">
+                    <h1 class="title is-6 is-mega-menu-title" style="color:#7f888f">Fabrique Du Loch</h1>
+                    <a class="navbar-item" href="https://www.lafabriqueduloch.org">
+                      <div class="navbar-content">
+                        <img src="/images/FabriqueDuLochAlgoric_logo_vert.png" alt="lafabriqueduloch">
+                        <p>
+                          <small class="has-text-info">lafabriqueduloch.org</small>
+                        </p>
+                        <p>La Fabrique Du Loch - FabLab</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <h1 class="title is-6 is-mega-menu-title" style="color:#7f888f">BlueBanquise</h1>
+                    <a class="navbar-item" href="https://bluebanquise.com">
+                      <div class="navbar-content">
+                        <img src="/images/bluebanquise_logo_ng.png" alt="bluebanquise">
+                        <p>
+                          <small class="has-text-info">bluebanquise.com</small>
+                        </p>
+                        <p>BlueBanquise open source stack</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <h1 class="title is-6 is-mega-menu-title" style="color:#7f888f">Auray - City</h1>
+                    <a class="navbar-item" href="https://auray.fr/">
+                      <div class="navbar-content">
+                        <img src="/images/FabriqueDuLochAlgoric_logo_vert.png" alt="auray">
+                        <p>
+                          <small class="has-text-info">auray.fr</small>
+                        </p>
+                        <p>Auray City</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="hero is-primary">
+      <div class="hero-body">
+        <div class="container"><br><br>
+          <div style="text-align:center;">
+            <img src="algoric_white.svg" alt="Algoric">
+          <!-- <h1 class="title">
+            Algoric
+          </h1> -->
+            <h2 class="subtitle">
+              A FabLab High Performance Computing center
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <!-- <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              Algoric - High Performance Computing Center
+            </h1>
+            <p class="subtitle is-4">
+              BlueBanquise, this website, and thanks
+            </p>
+          </div>
+        </header> -->
+        <div class="bd-content">
+          <div class="content">
+<!-- <h2>The stack</h2> -->
+<br>
+<b><span style="color: white">Algoric</span></b> is an High Performance Computing center,
+located at Auray (France), and hosted by a FabLab: La Fabrique du Loch.
+<br><br>
+Our HPC center is not conventional, as efforts are made on what is <b>around</b> supercomputing,
+instead of aiming maximum computational power.
+
+          <div class="bd-focus">
+            <nav class="columns">
+              <a class="bd-focus-item column has-text-centered" href="https://github.com/bluebanquise/" target="_blank">
+                <p class="title is-4">
+                  <strong>Flexible</strong>
+                </p>
+                <p class="subtitle is-6">
+                  Provide calculation ressources <strong>to all</strong>
+                </p>
+                <figure class="bd-focus-icon">
+                  <span class="bd-focus-desktop icon is-large" style="color: white;">
+                    <i class="fas fa-3x fa-chess"></i>
+                  </span>
+                </figure>
+              </a>
+              <a class="bd-focus-item column has-text-centered" href="/the_stack/features.html#compatibility">
+                <p class="title is-4">
+                  <strong>Green</strong>
+                </p>
+                <p class="subtitle is-6">
+                  <strong>Recycling</strong> hardware, <strong>recycling</strong> heat
+                </p>
+                <figure class="bd-focus-icon">
+                  <span class="bd-focus-desktop icon is-large" style="color: white;">
+                    <i class="fas fa-3x fa-seedling"></i>
+                  </span>
+                </figure>
+              </a>
+              <a class="bd-focus-item column has-text-centered" href="/the_stack/features.html#modularity">
+                <p class="title is-4">
+                  <strong>Gateway</strong>
+                </p>
+                <p class="subtitle is-6">
+                  <strong>Teaching</strong> supercomputing to access larger clusters
+                </p>
+                <figure class="bd-focus-icon">
+                  <span class="bd-focus-desktop icon is-large" style="color: white;">
+                    <i class="fas fa-3x fa-user-graduate"></i>
+                  </span>
+                </figure>
+              </a>
+              <a class="bd-focus-item column has-text-centered" href="/the_stack/features.html#modernity">
+                <p class="title is-4">
+                  <strong>Open</strong>
+                </p>
+                <p class="subtitle is-6">
+                  Fully <strong>opensource</strong> based approach
+                </p>
+                <figure class="bd-focus-icon">
+                  <span class="bd-focus-desktop icon is-large" style="color: white;">
+                    <i class="fas fa-3x fa-lock-open"></i>
+                  </span>
+                </figure>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+</body></html>
